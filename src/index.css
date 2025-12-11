@@ -1,0 +1,80 @@
+:root {
+  /* Light Mode (Default) */
+  --bg-color: #fafafa;
+  /* Slightly off-white for less harshness */
+  --bg-pattern: radial-gradient(#e5e7eb 1px, transparent 1px);
+  --bg-size: 24px 24px;
+
+  --text-primary: #111827;
+  /* Darker charcoal */
+  --text-secondary: #4b5563;
+  --accent-color: #4f46e5;
+  /* Slightly deeper indigo */
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.08);
+
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --transition-speed: 0.3s;
+}
+
+[data-theme='dark'] {
+  /* Dark Mode */
+  --bg-color: #0f172a;
+  /* Slate 900 */
+  --bg-pattern: radial-gradient(#1e293b 1px, transparent 1px);
+  --bg-size: 24px 24px;
+
+  --text-primary: #f1f5f9;
+  /* Slate 100 */
+  --text-secondary: #94a3b8;
+  --card-bg: #1e293b;
+  --card-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  background-image: var(--bg-pattern);
+  background-size: var(--bg-size);
+  color: var(--text-primary);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  /* Increased from 1024px */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1400px;
+    /* Even wider for large screens */
+  }
+}
+
+.section {
+  padding: 4rem 0;
+}

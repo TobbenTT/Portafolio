@@ -1,0 +1,182 @@
+/* Hero.css */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    /* Ensure patterns/glows don't overflow */
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1.2fr 1fr;
+        /* Text takes slightly more space, visual on right */
+        gap: 4rem;
+    }
+}
+
+.hero-text {
+    z-index: 2;
+}
+
+/* ... existing typography ... */
+
+
+.hero-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    letter-spacing: -0.03em;
+    max-width: 900px;
+}
+
+@media (min-width: 1024px) {
+    .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+}
+
+/* Dark mode adjustment for outline button if needed specific logic */
+[data-theme='dark'] .btn-outline {
+    border-color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+/* Code Visual / Terminal */
+.hero-visual {
+    display: none;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+@media (min-width: 1024px) {
+    .hero-visual {
+        display: flex;
+    }
+}
+
+.code-window {
+    background: rgba(15, 23, 42, 0.6); /* Semi-transparent dark slate */
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 480px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    transform: rotateY(-5deg) rotateX(2deg); /* Subtle 3D tilt */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.code-window:hover {
+    transform: rotateY(0deg) rotateX(0deg) scale(1.02);
+    box-shadow: 0 30px 60px rgba(99, 102, 241, 0.15); /* Indigo glow on hover */
+}
+
+.window-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--card-border);
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background-color: #ef4444; }
+.yellow { background-color: #eab308; }
+.green { background-color: #22c55e; }
+
+.window-title {
+    margin-left: 0.5rem;
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.window-body {
+    padding: 1.5rem;
+    overflow-x: auto;
+}
+
+.window-body pre {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.95rem;
+    color: #a5b4fc; /* Light Indigo text */
+    line-height: 1.6;
+    margin: 0;
+}
+
+[data-theme='light'] .code-window {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='light'] .window-body pre {
+    color: #4f46e5; /* Darker Indigo for light mode */
+}
