@@ -10,7 +10,7 @@ import ContactCTA from './components/ContactCTA' // Imported
 import Footer from './components/Footer'
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
