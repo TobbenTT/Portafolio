@@ -1,16 +1,52 @@
-# React + Vite
+# Portfolio - Clean Slate 👨‍💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Professional portfolio for **David Cabezas (TobbenTT)**, Backend Engineer & Architectural Strategist.
 
-Currently, two official plugins are available:
+Built with a **"Clean Slate"** visual philosophy: minimalist, content-focused, and high-performance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Clean Slate Concept](https://img.shields.io/badge/Style-Minimalist-black) ![React](https://img.shields.io/badge/React-18-blue) ![Vite](https://img.shields.io/badge/Vite-Fast-purple)
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Modern Tech Stack**: Built with React + Vite for speed and scalability.
+- **Dual Identity**: Seamlessly integrates professional identity (David Cabezas) with developer alias (TobbenTT).
+- **Dark/Light Mode**: Smooth theme transitions with persistent state.
+- **Glassmorphism**: Premium visual details on Navbar and Code Terminal.
+- **Responsive Design**: Fully optimized for Desktop, Tablet, and Mobile.
+- **Interactive Elements**:
+    - "Terminal" visual in Hero section.
+    - Career Timeline.
+    - Project Gallery with status indicators.
+    - Categorized Tech Stack.
 
-## Expanding the ESLint configuration
+## 🛠️ Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Core**: React, JavaScript (ES6+).
+- **Styling**: Vanilla CSS (Variables, Flexbox/Grid) - No heavy UI frameworks.
+- **Build Tool**: Vite.
+
+## 📦 Installation & Run
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/TobbenTT/Portafolio.git
+    cd Portafolio
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Start Development Server**:
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for Production**:
+    ```bash
+    npm run build
+    ```
+
+---
+© 2024 TobbenTT / David Cabezas.
