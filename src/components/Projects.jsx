@@ -20,6 +20,15 @@ const projectsData = [
         image: 'https://placehold.co/600x340/e2e8f0/1e293b?text=Bitware',
         demoUrl: '#',
         status: 'video'
+    },
+    {
+        id: 3,
+        title: 'NeuroBeats',
+        description: 'NeuroBeats es una plataforma de streaming de música de próxima generación que fusiona la experiencia de una red social con el poder de la Inteligencia Artificial.',
+        tags: ['Python', 'Django', 'MySQL', 'Bootstrap'],
+        image: 'https://placehold.co/600x340/e2e8f0/1e293b?text=NeuroBeats',
+        demoUrl: '#',
+        status: 'video'
     }
 ];
 

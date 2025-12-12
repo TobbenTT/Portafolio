@@ -10,6 +10,7 @@ const ProjectCard = ({ project }) => {
                     <div className="play-overlay">▶</div>
                 )}
             </div>
+
             <div className="card-content">
                 <div className="card-tags">
                     {project.tags.map(tag => (

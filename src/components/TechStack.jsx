@@ -6,8 +6,8 @@ const techGroups = [
         category: "Core Engineering",
         items: [
             { name: 'Python', level: 'Advanced' },
-            { name: 'PHP', level: 'Expert' },
-            { name: 'Java', level: 'Proficient' }
+            { name: 'PHP', level: 'Advanced' },
+            { name: 'Java', level: 'Advanced' }
         ]
     },
     {
