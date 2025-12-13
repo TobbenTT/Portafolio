@@ -10,7 +10,7 @@ const projectsData = [
         tags: ['PHP', 'MySQL', 'Bootstrap'],
         image: 'https://placehold.co/600x340/e2e8f0/1e293b?text=ColegioApp',
         demoUrl: '#',
-        repoUrl: '#',
+        repoUrl: 'https://github.com/TobbenTT/colegio',
         status: 'online'
     },
     {
@@ -20,7 +20,7 @@ const projectsData = [
         tags: ['Python', 'AWS', 'FastAPI'],
         image: 'https://placehold.co/600x340/e2e8f0/1e293b?text=Bitware',
         demoUrl: '#',
-        repoUrl: '#',
+        repoUrl: 'https://github.com/TobbenTT/Bitware',
         status: 'video'
     },
     {
@@ -30,7 +30,7 @@ const projectsData = [
         tags: ['Python', 'Django', 'MySQL', 'Bootstrap'],
         image: 'https://placehold.co/600x340/e2e8f0/1e293b?text=NeuroBeats',
         demoUrl: '#',
-        repoUrl: '#',
+        repoUrl: 'https://github.com/TobbenTT/NeuroBeats',
         status: 'video'
     }
 ];
