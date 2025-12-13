@@ -22,6 +22,15 @@ const ProjectCard = ({ project }) => {
                     {project.status === 'online' && <span className="status-dot" title="Online"></span>}
                 </h3>
                 <p className="card-description">{project.description}</p>
+
+                <div className="card-actions">
+                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
+                        Ver Demo
+                    </a>
+                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm">
+                        Código
+                    </a>
+                </div>
             </div>
         </article>
     );

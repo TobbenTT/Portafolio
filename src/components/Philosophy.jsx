@@ -21,7 +21,7 @@ const values = [
 
 const Philosophy = () => {
     return (
-        <section className="philosophy section">
+        <section id="philosophy" className="philosophy section">
             <div className="philosophy-header">
                 <h2 className="section-title">Mi Enfoque Técnico</h2>
                 <p className="section-subtitle">No solo escribo código. Construyo soluciones resilientes.</p>

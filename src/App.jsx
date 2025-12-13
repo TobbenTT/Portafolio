@@ -8,6 +8,7 @@ import Philosophy from './components/Philosophy'
 import Timeline from './components/Timeline' // Imported
 import ContactCTA from './components/ContactCTA' // Imported
 import Footer from './components/Footer'
+import ScrollReveal from './components/ScrollReveal'
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
@@ -25,13 +26,27 @@ function App() {
     <>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main className="container">
-        <Hero />
-        <Philosophy /> {/* Added here for flow: Hero -> Approach -> Projects */}
-        <Projects />
-        <TechStack />
-        <Certificates />
-        <Timeline /> {/* Trajectory after certifications */}
-        <ContactCTA /> {/* Final Call to Action */}
+        <ScrollReveal>
+          <Hero />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Philosophy />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Projects />
+        </ScrollReveal>
+        <ScrollReveal>
+          <TechStack />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Certificates />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Timeline />
+        </ScrollReveal>
+        <ScrollReveal>
+          <ContactCTA />
+        </ScrollReveal>
       </main>
       <Footer />
     </>

@@ -3,7 +3,7 @@ import './ContactCTA.css';
 
 const ContactCTA = () => {
     return (
-        <section className="contact-cta section">
+        <section id="contact" className="contact-cta section">
             <div className="cta-content">
                 <h2 className="cta-title">¿Listo para escalar tu próximo proyecto?</h2>
                 <p className="cta-text">
