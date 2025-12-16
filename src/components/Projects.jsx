@@ -19,7 +19,7 @@ const projectsData = [
         description: 'Solución de arquitectura backend para procesamiento de datos masivos en tiempo real.',
         tags: ['Python', 'AWS', 'FastAPI'],
         image: 'https://placehold.co/600x340/e2e8f0/1e293b?text=Bitware',
-        demoUrl: '#',
+        demoUrl: 'https://youtu.be/vS63MtBvItw',
         repoUrl: 'https://github.com/TobbenTT/Bitware',
         status: 'video'
     },
