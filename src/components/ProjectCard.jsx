@@ -25,7 +25,7 @@ const ProjectCard = ({ project }) => {
 
                 <div className="card-actions">
                     <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
-                        Ver Demo
+                        {project.status === 'video' ? 'Ver Video' : 'Ver Demo'}
                     </a>
                     <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm">
                         Código

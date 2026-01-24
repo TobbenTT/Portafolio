@@ -39,9 +39,9 @@ const projectsData = [
         description: 'Aplicación móvil nativa diseñada para optimizar la logística y gestión de servicios funerarios. Integra base de datos en tiempo real y geolocalización.',
         tags: ['Kotlin', 'Firebase', 'Google Maps'],
         image: 'https://placehold.co/600x340/e2e8f0/1e293b?text=Gestor+Funeraria',
-        demoUrl: '#',
+        demoUrl: 'https://youtu.be/4vIozCK1Ay8',
         repoUrl: 'https://github.com/TobbenTT/GestorFuneraria',
-        status: 'online'
+        status: 'video'
     }
 ];
 
