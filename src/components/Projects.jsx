@@ -50,6 +50,16 @@ const projectsData = [
         demoUrl: 'https://youtu.be/4vIozCK1Ay8',
         repoUrl: 'https://github.com/TobbenTT/GestorFuneraria',
         status: 'video'
+    },
+    {
+        id: 5,
+        title: 'TaxOptimizer CL',
+        description: 'PWA para gestión tributaria inteligente enfocada en privacidad (Local-First). Proyecta impuestos mensuales (F29) y anuales (F22).',
+        tags: ['TypeScript', 'PWA', 'Local-First'],
+        image: 'https://placehold.co/600x340/e2e8f0/1e293b?text=TaxOptimizer',
+        demoUrl: '#',
+        repoUrl: 'https://github.com/TobbenTT/tax-optimizer',
+        status: 'code'
     }
 ];
 
