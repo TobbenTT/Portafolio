@@ -1,6 +1,14 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 import ProjectCard from './ProjectCard';
 import './Projects.css';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
 
 const projectsData = [
     {
@@ -49,10 +57,48 @@ const Projects = () => {
     return (
         <section id="projects" className="projects section">
             <h2 className="section-title">Proyectos Destacados</h2>
-            <div className="projects-grid">
-                {projectsData.map(project => (
-                    <ProjectCard key={project.id} project={project} />
-                ))}
+            <div className="projects-container">
+                <Swiper
+                    modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    }}
+                    pagination={{ clickable: true }}
+                    navigation={true}
+                    autoplay={{
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                        },
+                    }}
+                    className="projects-swiper"
+                >
+                    {projectsData.map(project => (
+                        <SwiperSlide key={project.id} className="project-slide">
+                            <ProjectCard project={project} />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
         </section>
     );

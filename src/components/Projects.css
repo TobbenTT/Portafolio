@@ -1,5 +1,7 @@
 .projects {
     padding-top: 2rem;
+    padding-bottom: 4rem;
+    overflow: hidden; /* Prevent horizontal scrollbar on body if slides overflow */
 }
 
 .section-title {
@@ -7,24 +9,52 @@
     font-weight: 700;
     margin-bottom: 3rem;
     color: var(--text-primary);
+    text-align: center;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    /* Wider cards */
-    gap: 2.5rem;
-    /* More breathing room */
+.projects-container {
+    width: 100%;
+    padding: 2rem 0;
 }
 
-@media (min-width: 1280px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* Force 2 columns on large screens for the 2 projects if preferred, or just rely on auto-fit */
-        /* Actually auto-fit is better, but minmax 350px might allow 3 on very wide. 
-           Given 2 projects, they will be huge. Let's keep auto-fit but max-width for cards?
-           User said "laterales vacios" -> so they want them to fill space. 
-           Auto-fit is fine.
-        */
+.projects-swiper {
+    width: 100%;
+    padding-bottom: 50px !important; /* Space for pagination */
+}
+
+.project-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    /* Fixed width for slides to look good in 'auto' mode or Coverflow */
+    height: auto;
+}
+
+/* Swiper Overlay Effects */
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    background-image: none !important; /* Remove or customize shadows if needed */
+}
+
+/* Custom Pagination Bullets */
+.swiper-pagination-bullet {
+    background: var(--text-secondary, #888) !important;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary-color, #3b82f6) !important;
+    opacity: 1;
+}
+
+/* Custom Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary-color, #3b82f6) !important;
+}
+
+@media (max-width: 640px) {
+    .project-slide {
+        width: 85%; /* Slightly smaller on mobile to show hint of next slide */
     }
 }
